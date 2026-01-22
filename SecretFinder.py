@@ -75,6 +75,23 @@ _regex = {
                     r"password is\s*[`=:\"]*\s*[^\s]+|" \
                     r"pwd\s*[`=:\"]*\s*[^\s]+|" \
                     r"passwd\s*[`=:\"]+\s*[^\s]+)",
+    'cloudinary' : r'cloudinary://.*',
+    'facebook_oauth' : r"[f|F][a|A][c|C][e|E][b|B][o|O][o|O][k|K].*['|\"][0-9a-f]{32}['|\"]",
+    'firebase_url' : r'.*firebaseio\.com',
+    'generic_api_key' : r"[a|A][p|P][i|I][_]?[k|K][e|E][y|Y].*['|\"][0-9a-zA-Z]{32,45}['|\"]",
+    'generic_secret' : r"[s|S][e|E][c|C][r|R][e|E][t|T].*['|\"][0-9a-zA-Z]{32,45}['|\"]",
+    'github_token' : r"[g|G][i|I][t|T][h|H][u|U][b|B].*['|\"][0-9a-zA-Z]{35,40}['|\"]",
+    'google_gcp_oauth' : r'[0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com',
+    'google_service_account' : r'"type": "service_account"',
+    'heroku_api_key_text' : r'[h|H][e|E][r|R][o|O][k|K][u|U].*[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}',
+    'mailchimp_api_key' : r'[0-9a-f]{32}-us[0-9]{1,2}',
+    'password_in_url' : r"[a-zA-Z]{3,10}://[^/\s:@]{3,20}:[^/\s:@]{3,20}@.{1,100}[\"'\s]",
+    'picatic_api_key' : r'sk_live_[0-9a-z]{32}',
+    'slack_token_simple' : r'(xox[p|b|o|a]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32})',
+    'slack_webhook' : r'https://hooks.slack.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}',
+    'square_access_token_alt' : r'sq0atp-[0-9A-Za-z\-_]{22}',
+    'twitter_access_token' : r'[t|T][w|W][i|I][t|T][t|T][e|E][r|R].*[1-9][0-9]+-[0-9a-zA-Z]{40}',
+    'twitter_oauth' : r"[t|T][w|W][i|I][t|T][t|T][e|E][r|R].*['|\"][0-9a-zA-Z]{35,44}['|\"]",
 }
 
 _template = '''
